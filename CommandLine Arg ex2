@@ -1,0 +1,9 @@
+class CommandLineEg 
+{
+	public static void main(String[] args) 
+	{
+		String A=args[0];
+		String B=args[1];
+		System.out.println(A + "Technologies" + B);
+	}
+}
