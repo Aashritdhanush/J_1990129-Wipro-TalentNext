@@ -1,0 +1,19 @@
+class ControleStatements5 
+{
+	public static void main(String[] args) 
+	{
+		char A='A';
+		if(Character.isLetter(A))
+		{
+			System.out.println("Entered character is a letter");
+		}
+		else if(Character.isDigit(A))
+		{
+			System.out.println("Entered character is digit");
+		}
+		else
+		{
+			System.out.println("It is a special character");
+		}
+	}
+}
