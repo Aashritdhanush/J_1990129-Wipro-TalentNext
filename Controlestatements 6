@@ -1,0 +1,30 @@
+class ControleStatements6 
+{
+	public static void main(String[] args) 
+	{
+		String A=args[0];
+		int B=Integer.parseInt(args[1]);
+		if(A=="Female")
+		{
+			if(B>0 && B<59)
+			{
+				System.out.println("The % of intrest is 8.2%");
+			}
+			else if(B>58 && B<100)
+			{
+				System.out.println("The % of intrest is 9.2%");
+			}
+		}
+		else
+		{
+			if(B>0 && B<59)
+			{
+				System.out.println("The % of intrest is 9.2%");
+			}
+			else if(B>58 && B<100)
+			{
+				System.out.println("The % of intrest is 10.5%");
+			}
+		}
+	}
+}
