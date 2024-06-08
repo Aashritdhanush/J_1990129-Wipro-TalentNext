@@ -1,0 +1,24 @@
+class Palindrome
+{
+	public static void main(String[] args) 
+	{
+		int n=1234321;
+		int rev=0,rem;
+		int X=n;
+		while(X>0)
+		{
+			rem=X%10;
+			rev=rev*10+rem;
+		    X=X/10;
+		}
+		System.out.println(rev);
+		if(n==rev)
+		{
+			System.out.println("is a palindrome");
+		}
+		else
+		{
+			System.out.println("is not a palindrome");
+		}
+	}
+}
