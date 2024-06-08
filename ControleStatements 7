@@ -1,0 +1,15 @@
+class LowerToUpper 
+{
+	public static void main(String[] args) 
+	{
+		char letter='e';
+		if(letter>='A' && letter<='Z')
+		{
+			System.out.println(Character.toLowerCase(letter));
+		}
+		else
+		{
+			System.out.println(Character.toUpperCase(letter));
+		}
+	}
+}
