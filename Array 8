@@ -1,0 +1,32 @@
+class Array6and7 
+{
+	public static void main(String[] args) 
+	{
+		int k=0,l=0;
+		int sum1=0,sum2=0,sum;
+		int a[]={10,3,6,1,2,7,9};
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==6)
+			{
+				k=i;
+			}
+
+			if(a[i]==7)
+			{
+				l=i;
+			}
+
+
+		}
+		for(int i=0;i<k;i++)
+		{
+			sum1=sum1+a[i];
+		}
+		for(int i=l+1;i<a.length;i++)
+		{
+			sum2=sum2+a[i];
+		}
+		System.out.println("sum of elements is:"+(sum1+sum2));
+	}
+}
