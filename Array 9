@@ -1,0 +1,27 @@
+class Array10to0 
+{
+	public static void main(String[] args) 
+	{
+		int l,i,j,k=0;
+		int a[]={1,10,10,2};
+		int b[]=new int[a.length];
+		l=a.length;
+		for(i=0;i<l;i++)
+		{
+			if(a[i]==10)
+			{
+				a[i]=a[i]*0;
+			}
+			else
+			{
+				b[k]=a[i];
+				k++;
+			}
+			
+		}
+		for(i=0;i<l;i++)
+			{
+		System.out.print(b[i]+" ");
+			}
+	}
+}
