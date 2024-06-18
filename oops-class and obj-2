@@ -1,0 +1,33 @@
+import java.util.*;
+class Calculator
+{
+	static int powerInt(int num1,int num2)
+	{
+		int num3=(int)Math.pow(num1, num2);
+		return num3;
+	}
+	static double LaunchCalculator(double num1,int num2)
+	{
+		double num3=Math.pow(num1, num2);
+		return num3;
+	}
+	static double LaunchCalculatorDoub(double num1,double num2)
+	{
+		double num3=Math.pow(num1, num2);
+		return num3;
+	}
+
+}
+
+class LaunchCalculator 
+{
+	public static void main(String[] args) 
+	{
+		Calculator.powerInt(3, 2);
+		Calculator.LaunchCalculator(6.5, 2);
+		Calculator.LaunchCalculatorDoub(6.5, 2.5);
+		System.out.println(Calculator.powerInt(3, 2));
+		System.out.println(Calculator.LaunchCalculator(6.5, 2));
+		System.out.println(Calculator.LaunchCalculatorDoub(6.5, 1.5));
+	}
+}
