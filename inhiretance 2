@@ -1,0 +1,51 @@
+class Person
+{
+	private String name;
+	Person(String n)
+	{
+		name=n;
+	}
+	public String getname()
+	{
+		return name;
+	}
+}
+class Employee extends Person
+{
+	private double salary;
+	private int year;
+	private String natInsurence;
+	Employee(String n,double sal,int yea,String natIns)
+	{
+		super(n);
+		salary=sal;
+		year=yea;
+		natInsurence=natIns;
+
+	}
+	public double getsalary()
+	{
+		return salary;
+	}
+	public int getyear()
+	{
+		return year;
+	}
+	public String getnatInsurence()
+	{
+		return natInsurence;
+	}
+	String disp1()
+	{
+		return "Name :"+getname()+"  Salary :"+salary+" Year :"+year+" nationalInsurenceNum :"+natInsurence;
+	}
+}
+
+class EmployeeInheritance2 
+{
+	public static void main(String[] args) 
+	{
+		Employee e=new Employee("Aashrit",25000,2003,"1223asss900");
+		System.out.println(e.disp1());
+	}
+}
