@@ -1,0 +1,43 @@
+class Animal
+{
+	void eat()
+	{
+		System.out.println("various Animals eat various things as food");
+	}
+	void sleep()
+	{
+		System.out.println("Every animal sleeps");
+	}
+}
+class Bird extends Animal
+{
+	
+	void eat()
+	{
+		System.out.println("Birds take grains as food");
+	}
+	
+	void sleep()
+	{
+		System.out.println("Birds sleeps on trees");
+	}
+	void fly()
+	{
+		System.out.println("Birds can fly in sky");
+	}
+}
+
+class LaunchInheritence1 
+{
+	public static void main(String[] args) 
+	{
+		Animal a=new Animal();
+		Bird b=new Bird();
+		a.eat();
+		a.sleep();
+		b.eat();
+		b.sleep();
+		b.fly();
+		
+	}
+}
